@@ -24,6 +24,7 @@
 @synthesize window = _window;
 @synthesize viewController = _viewController;
 @synthesize objectManager, objectStore;
+@synthesize disIssueVC;
 
 - (void) initializeRestKit
 {

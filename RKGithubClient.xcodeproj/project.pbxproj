@@ -437,7 +437,10 @@
 				GCC_PREFIX_HEADER = "RKGithubClient/RKGithubClient-Prefix.pch";
 				HEADER_SEARCH_PATHS = "\"$(BUILT_PRODUCTS_DIR)/../../Headers\"";
 				INFOPLIST_FILE = "RKGithubClient/RKGithubClient-Info.plist";
-				OTHER_LDFLAGS = "-ObjC-all_load";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -450,7 +453,10 @@
 				GCC_PREFIX_HEADER = "RKGithubClient/RKGithubClient-Prefix.pch";
 				HEADER_SEARCH_PATHS = "\"$(BUILT_PRODUCTS_DIR)/../../Headers\"";
 				INFOPLIST_FILE = "RKGithubClient/RKGithubClient-Info.plist";
-				OTHER_LDFLAGS = "-ObjC-all_load";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
