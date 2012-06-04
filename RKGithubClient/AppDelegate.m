@@ -31,6 +31,7 @@
     self.objectManager = [RKObjectManager managerWithBaseURLString:@"https://api.github.com/"];
     self.objectStore   = [RKManagedObjectStore objectStoreWithStoreFilename:@"RKGithubClient.sqlite"];
     self.objectManager.objectStore = self.objectStore;
+    [RKObjectManager setSharedManager:self.objectManager];
     self.objectManager.mappingProvider = [RKGithubCMappingProvider mappingProviderWithObjectStore:self.objectStore];
 }
 
